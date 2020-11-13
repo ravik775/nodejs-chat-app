@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat app</title> 
+        <script src="/socket.io/socket.io.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js" integrity="sha512-6AXIWogbKpsHvoZJrJtHpIYES4wP8czSj0zk7ZfwOYS8GWYFNSykwdfapt7yQc4ikZytemBu+QyVObzBHJMwYg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.min.css">
+    </head>
+    <body>
+        <div class="centered-form"> 
+            <div class="centered-form__box">
+                    <h1>Join</h1>
+                    <form action="/chat.html">
+                        <label>Display Name</label>
+                        <input type="text" name="username" placeholder="Display Name" required/>
+                        <label>Room</label>
+                        <input type="text" name="room" placeholder="Room Name" required/>
+                        <button>Join</button>
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>
