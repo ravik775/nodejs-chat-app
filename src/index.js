@@ -71,7 +71,7 @@ io.on('connection', (socket)=>{
         if (user)
         {
             io.to(user.room).emit("locationMessage", generateMessage(user.username, `https://www.google.com/maps?q=${latitude},${longitude}`))
-            callback()git@github.com:ravik775/nodejs-chat-app.git
+            callback()
         } 
      })
 })
